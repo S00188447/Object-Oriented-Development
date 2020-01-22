@@ -23,7 +23,8 @@ namespace Labsheet1
 
         int number = 0;
         //Creating lists
-        List<Band> bandnames = new List<Band>();
+        List<Band> bandNames = new List<Band>();
+        List<Albums> albumNames = new List<Albums>();
         List<Band> selectedband = new List<Band>();
         List<Band> filteredband = new List<Band>();
         public MainWindow()
@@ -45,16 +46,48 @@ namespace Labsheet1
 
 
             //add to list
-            bandnames.Add(B1);
-            bandnames.Add(B2);
-            bandnames.Add(B3);
-            bandnames.Add(B4);
-            bandnames.Add(B5);
-            bandnames.Add(B6);
+            bandNames.Add(B1);
+            bandNames.Add(B2);
+            bandNames.Add(B3);
+            bandNames.Add(B4);
+            bandNames.Add(B5);
+            bandNames.Add(B6);
 
 
             //display in listbox
-            lbxBandNames.ItemsSource = bandnames; //tell listbox that the source of items is the list activitie
+            lbxBandNames.ItemsSource = bandNames; //tell listbox that the source of items is the list activitie
+
+
+
+            Albums A1 = new Albums("Abbey Road", "1969", " 20 mil");
+            Albums A2 = new Albums("Revolver", "1966", " 25 mil");
+            Albums A3 = new Albums("Face to Face", "2001", " 3 mil");
+            Albums A4 = new Albums("Back Home", "2006", " 5 mil");
+            Albums A5 = new Albums("No line on the horizon", "2000", " 9 mil");
+            Albums A6 = new Albums("The million dollar hotel", "2007", " 11 mil");
+            Albums A7 = new Albums("Progress", "2001", " 6 mil ");
+            Albums A8 = new Albums("Wonderland", "2006", " 4 mil");
+            Albums A9 = new Albums("Up all night", "2015", " 21 mil");
+            Albums A10 = new Albums("Take me home", "2016", " 18 mil");
+            Albums A11 = new Albums("Arrival", "1977", " 15 mil");
+            Albums A12 = new Albums("The Visitors", "1995", " 19 mil");
+
+            B1.Albums.Add(A1);
+            B1.Albums.Add(A2);
+            B2.Albums.Add(A3);
+            B2.Albums.Add(A4);
+            B3.Albums.Add(A5);
+            B3.Albums.Add(A6);
+            B4.Albums.Add(A7);
+            B4.Albums.Add(A8);
+            B5.Albums.Add(A9);
+            B5.Albums.Add(A10);
+            B6.Albums.Add(A11);
+            B6.Albums.Add(A12);
+
+
+            //display in listbox
+            lbxAlbumNames.ItemsSource = albumNames; //tell listbox that the source of items is the list activitie
 
 
 
