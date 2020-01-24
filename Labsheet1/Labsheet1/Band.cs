@@ -18,8 +18,6 @@ namespace Labsheet1
 
         public List<Albums> Albums { get; set; }
 
-
-
         public override string ToString()
         {
             return $" {bandName}";
@@ -51,19 +49,10 @@ namespace Labsheet1
         {
 
         }
-
+   
         public class IndieBand : Bands
         {
 
         }
-
-            
-
-
-        
-
-
-
-
     }
 }

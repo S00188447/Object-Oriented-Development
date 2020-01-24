@@ -25,8 +25,22 @@ namespace Labsheet1
         //Creating lists
         List<Band> bandNames = new List<Band>();
         List<Albums> albumNames = new List<Albums>();
-        List<Band> selectedband = new List<Band>();
-        List<Band> filteredband = new List<Band>();
+
+
+
+
+        private Random random = new Random();
+
+        void randomSales()
+        {
+            int randomsales = random.Next(1, 30);   
+        }
+        DateTime RandomDay()
+        {
+            DateTime start = new DateTime(1995, 1, 1);
+            int range = (DateTime.Today - start).Days;
+            return start.AddDays(random.Next(range));
+        }
         public MainWindow()
         {
             InitializeComponent();
@@ -57,37 +71,45 @@ namespace Labsheet1
             //display in listbox
             lbxBandNames.ItemsSource = bandNames; //tell listbox that the source of items is the list activitie
 
+            lableBandInfo.Content = albumNames;
+
+            Random random = new Random();
 
 
-            Albums A1 = new Albums("Abbey Road", "1969", " 20 mil");
-            Albums A2 = new Albums("Revolver", "1966", " 25 mil");
-            Albums A3 = new Albums("Face to Face", "2001", " 3 mil");
-            Albums A4 = new Albums("Back Home", "2006", " 5 mil");
-            Albums A5 = new Albums("No line on the horizon", "2000", " 9 mil");
-            Albums A6 = new Albums("The million dollar hotel", "2007", " 11 mil");
-            Albums A7 = new Albums("Progress", "2001", " 6 mil ");
-            Albums A8 = new Albums("Wonderland", "2006", " 4 mil");
-            Albums A9 = new Albums("Up all night", "2015", " 21 mil");
-            Albums A10 = new Albums("Take me home", "2016", " 18 mil");
-            Albums A11 = new Albums("Arrival", "1977", " 15 mil");
-            Albums A12 = new Albums("The Visitors", "1995", " 19 mil");
+            Albums A1 = new Albums("Abbey Road", RandomDay(),random.Next(1,30) );
+            Albums A2 = new Albums("Revolver", RandomDay(), random.Next(1, 30));
+            Albums A3 = new Albums("Face to Face", RandomDay(), random.Next(1, 30));
+            Albums A4 = new Albums("Back Home", RandomDay(), random.Next(1, 30));
+            Albums A5 = new Albums("No line on the horizon", RandomDay(), random.Next(1, 30));
+            Albums A6 = new Albums("The million dollar hotel", RandomDay(), random.Next(1, 30));
+            Albums A7 = new Albums("Progress", RandomDay(), random.Next(1, 30));
+            Albums A8 = new Albums("Wonderland", RandomDay(), random.Next(1, 30));
+            Albums A9 = new Albums("Up all night", RandomDay(), random.Next(1, 30));
+            Albums A10 = new Albums("Take me home", RandomDay(), random.Next(1, 30));
+            Albums A11 = new Albums("Arrival", RandomDay(), random.Next(1, 30));
+            Albums A12 = new Albums("The Visitors", RandomDay(), random.Next(1, 30));
 
-            B1.Albums.Add(A1);
-            B1.Albums.Add(A2);
-            B2.Albums.Add(A3);
-            B2.Albums.Add(A4);
-            B3.Albums.Add(A5);
-            B3.Albums.Add(A6);
-            B4.Albums.Add(A7);
-            B4.Albums.Add(A8);
-            B5.Albums.Add(A9);
-            B5.Albums.Add(A10);
-            B6.Albums.Add(A11);
-            B6.Albums.Add(A12);
+            //B1.Albums.Add(A1);
+            //B1.Albums.Add(A2);
+            //B2.Albums.Add(A3);
+            //B2.Albums.Add(A4);
+            //B3.Albums.Add(A5);
+            //B3.Albums.Add(A6);
+            //B4.Albums.Add(A7);
+            //B4.Albums.Add(A8);
+            //B5.Albums.Add(A9);
+            //B5.Albums.Add(A10);
+            //B6.Albums.Add(A11);
+            //B6.Albums.Add(A12);
 
 
             //display in listbox
             lbxAlbumNames.ItemsSource = albumNames; //tell listbox that the source of items is the list activitie
+
+            lbxBandInfo.ItemsSource = albumNames;
+
+
+
 
 
 

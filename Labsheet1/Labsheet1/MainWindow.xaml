@@ -11,15 +11,16 @@
             <ColumnDefinition Width="49*"/>
             <ColumnDefinition Width="50*"/>
         </Grid.ColumnDefinitions>
-        <Label Content="Bands" HorizontalAlignment="Left" Height="47" Margin="113,87,0,0" VerticalAlignment="Top" Width="151" FontSize="24"/>
-        <Label Content="Albums" HorizontalAlignment="Left" Height="47" Margin="130.661,148,0,0" VerticalAlignment="Top" Width="225" FontSize="24" Grid.Column="1"/>
-        <ComboBox x:Name="comboGenre" HorizontalAlignment="Left" Height="28" Margin="113,39,0,0" VerticalAlignment="Top" Width="195" MouseDoubleClick="ComboGenre_MouseDoubleClick"/>
-        <Label Content="Genre" HorizontalAlignment="Left" Height="28" Margin="26,39,0,0" VerticalAlignment="Top" Width="82" FontSize="16"/>
-        <Label Content="Band Information" HorizontalAlignment="Left" Height="47" Margin="130.661,20,0,0" VerticalAlignment="Top" Width="216" FontSize="24" Grid.Column="1"/>
-        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Height="31" Margin="185.661,364,0,0" VerticalAlignment="Top" Width="101" Grid.Column="1" Click="BtnSave_Click"/>
-        <ListBox x:Name="lbxBandNames" HorizontalAlignment="Left" Height="156" Margin="113,172,0,0" VerticalAlignment="Top" Width="151"/>
-        <ListBox x:Name="lbxBandInfo" Grid.Column="1" HorizontalAlignment="Left" Height="77" Margin="134,71,0,0" VerticalAlignment="Top" Width="179"/>
-        <ListBox x:Name="lbxAlbumNames" Grid.Column="1" HorizontalAlignment="Left" Height="118" Margin="138,197,0,0" VerticalAlignment="Top" Width="175"/>
+        <Label Content="Bands" HorizontalAlignment="Left" Height="47" Margin="113,58,0,0" VerticalAlignment="Top" Width="151" FontSize="24"/>
+        <Label Content="Albums" HorizontalAlignment="Left" Height="47" Margin="131,145,0,0" VerticalAlignment="Top" Width="225" FontSize="24" Grid.Column="1"/>
+        <ComboBox x:Name="comboGenre" HorizontalAlignment="Left" Height="28" Margin="171,105,0,0" VerticalAlignment="Top" Width="195" MouseDoubleClick="ComboGenre_MouseDoubleClick" RenderTransformOrigin="0.512,1.739"/>
+        <Label Content="Genre" HorizontalAlignment="Left" Height="28" Margin="113,105,0,0" VerticalAlignment="Top" Width="82" FontSize="16"/>
+        <Label Content="Band Information" HorizontalAlignment="Left" Height="47" Margin="95,20,0,0" VerticalAlignment="Top" Width="218" FontSize="24" Grid.Column="1"/>
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Height="31" Margin="212,350,0,0" VerticalAlignment="Top" Width="101" Grid.Column="1" Click="BtnSave_Click"/>
+        <ListBox x:Name="lbxBandNames" HorizontalAlignment="Left" Height="248" Margin="113,148,0,0" VerticalAlignment="Top" Width="222"/>
+        <ListBox x:Name="lbxAlbumNames" Grid.Column="1" HorizontalAlignment="Left" Height="148" Margin="95,197,0,0" VerticalAlignment="Top" Width="218"/>
+        <Label x:Name="lableBandInfo" Content="" Grid.Column="1" HorizontalAlignment="Left" Height="73" Margin="95,72,0,0" VerticalAlignment="Top" Width="218"/>
+        <ListBox x:Name="lbxBandInfo" Grid.Column="1" HorizontalAlignment="Left" Height="73" Margin="212,72,0,0" VerticalAlignment="Top" Width="128"/>
 
     </Grid>
 </Window>
