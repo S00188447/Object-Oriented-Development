@@ -179,7 +179,8 @@ namespace LabSheet3
             NORTHWNDEntities db = new NORTHWNDEntities();
 
             var query = db.Customers_By_City("London");
-            //dgCustomerEx9.ItemsSource = query.ToList();
+            dgCustomerEx4.ItemsSource = query.ToList();
+
         }
     }
 }

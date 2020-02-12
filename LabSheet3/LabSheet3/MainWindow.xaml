@@ -5,138 +5,172 @@
     <Grid>
         <Grid>
             <TabControl>
-                
-                <TabItem RenderTransformOrigin="2.068,3.998">
-                    <TabItem.Header>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Ex1" Foreground="Blue" Width="14" FontSize="9px" />
-                        </StackPanel>
-                    </TabItem.Header>
-                    
-                    <Label >
+
+                <TabItem>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="100"/>
+                        </Grid.RowDefinitions>
                         <Button Name= "btnqueryEx1" Content ="Excercise 1 Query" Height="25" Width="100
                                 " Click="BtnqueryEx1_Click"/>
-                        
-                    </Label>
-
-     
-
-
+                        <DataGrid Name="dgCustomerEx1" Grid.Row="1" Grid.Column="0"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Ex1" Foreground="Red" Width="14" FontSize="9px" />
+                        </StackPanel>
+                    </Grid>
                 </TabItem>
 
 
 
                 <TabItem>
-                    <TabItem.Header>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="100"/>
+                        </Grid.RowDefinitions>
+                        <Button Name= "btnqueryEx2" Content ="Excercise 2 Query" Height="25" Width="100
+                                " Click="BtnqueryEx2_Click"/>
+                        <DataGrid Name="dgCustomerEx2" Grid.Row="1" Grid.Column="0"/>
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Text="Ex2" Foreground="Red" Width="14" FontSize="9px" />
                         </StackPanel>
-                    </TabItem.Header>
-                    <Label >
-                        <Button Name= "btnqueryEx2" Content ="Excercise 2 Query" Height="25" Width="100
-                                " Click="BtnqueryEx2_Click"/>
-                    </Label>
+                    </Grid>
                 </TabItem>
 
 
 
                 <TabItem>
-                    <TabItem.Header>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Ex3" Foreground="Green" Width="14" FontSize="9px" />
-                        </StackPanel>
-                    </TabItem.Header>
-                    <Label >
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="100"/>
+                        </Grid.RowDefinitions>
                         <Button Name= "btnqueryEx3" Content ="Excercise 3 Query" Height="25" Width="100
                                 " Click="BtnqueryEx3_Click"/>
-                    </Label>
+                        <DataGrid Name="dgCustomerEx3" Grid.Row="1" Grid.Column="0"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Ex3" Foreground="Red" Width="14" FontSize="9px" />
+                        </StackPanel>
+                    </Grid>
                 </TabItem>
 
 
-                
+
                 <TabItem>
-                    <TabItem.Header>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Ex4" Foreground="YellowGreen" Width="14" FontSize="9px" />
-                        </StackPanel>
-                    </TabItem.Header>
-                    <Label >
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3*"/>
+                            <ColumnDefinition Width="115*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="100"/>
+                        </Grid.RowDefinitions>
                         <Button Name= "btnqueryEx4" Content ="Excercise 4 Query" Height="25" Width="100
-                                " Click="BtnqueryEx4_Click"/>
-                    </Label>
+                                " Click="BtnqueryEx4_Click" Grid.Column="1" Margin="62.148,8,68,8"/>
+                        <DataGrid Name="dgCustomerEx4" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"/>
+                        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2">
+                            <TextBlock Text="Ex4" Foreground="Red" Width="14" FontSize="9px" />
+                        </StackPanel>
+                    </Grid>
                 </TabItem>
 
-                
-                
+
+
                 <TabItem>
-                    <TabItem.Header>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Ex5" Foreground="Purple" Width="14" FontSize="9px" />
-                        </StackPanel>
-                    </TabItem.Header>
-                    <Label >
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="100"/>
+                        </Grid.RowDefinitions>
                         <Button Name= "btnqueryEx5" Content ="Excercise 5 Query" Height="25" Width="100
                                 " Click="BtnqueryEx5_Click"/>
-                    </Label>
+                        <DataGrid Name="dgCustomerEx5" Grid.Row="1" Grid.Column="0"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Ex5" Foreground="Red" Width="14" FontSize="9px" />
+                        </StackPanel>
+                    </Grid>
                 </TabItem>
 
 
 
                 <TabItem>
-                    <TabItem.Header>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Ex6" Foreground="DeepPink" Width="14" FontSize="9px" />
-                        </StackPanel>
-                    </TabItem.Header>
-                    <Label >
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="100"/>
+                        </Grid.RowDefinitions>
                         <Button Name= "btnqueryEx6" Content ="Excercise 6 Query" Height="25" Width="100
                                 " Click="BtnqueryEx6_Click"/>
-                    </Label>
+                        <DataGrid Name="dgCustomerEx6" Grid.Row="1" Grid.Column="0"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Ex6" Foreground="Red" Width="14" FontSize="9px" />
+                        </StackPanel>
+                    </Grid>
                 </TabItem>
 
 
 
                 <TabItem>
-                    <TabItem.Header>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Ex7" Foreground="MediumPurple" Width="14" FontSize="9px" />
-                        </StackPanel>
-                    </TabItem.Header>
-                    <Label >
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="100"/>
+                        </Grid.RowDefinitions>
                         <Button Name= "btnqueryEx7" Content ="Excercise 7 Query" Height="25" Width="100
                                 " Click="BtnqueryEx7_Click"/>
-                    </Label>
+                        <DataGrid Name="dgCustomerEx7" Grid.Row="1" Grid.Column="0"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Ex7" Foreground="Red" Width="14" FontSize="9px" />
+                        </StackPanel>
+                    </Grid>
                 </TabItem>
 
 
 
                 <TabItem>
-                    <TabItem.Header>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Ex8" Foreground="OrangeRed" Width="14" FontSize="9px" />
-                        </StackPanel>
-                    </TabItem.Header>
-                    <Label >
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="19*"/>
+                            <ColumnDefinition Width="40*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="100"/>
+                        </Grid.RowDefinitions>
                         <Button Name= "btnqueryEx8" Content ="Excercise 8 Query" Height="25" Width="100
-                                " Click="BtnqueryEx8_Click"/>
-                    </Label>
+                                " Click="BtnqueryEx8_Click" Grid.ColumnSpan="2" Margin="68,8"/>
+                        <DataGrid Name="dgCustomerEx8" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"/>
+                        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2">
+                            <TextBlock Text="Ex8" Foreground="Red" Width="14" FontSize="9px" />
+                        </StackPanel>
+                    </Grid>
                 </TabItem>
 
 
                 <TabItem>
-                    <TabItem.Header>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Ex9" Foreground="blue" Width="14" FontSize="9px" />
-                        </StackPanel>
-                    </TabItem.Header>
-                    <Label >
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="89*"/>
+                            <ColumnDefinition Width="147*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="100"/>
+                        </Grid.RowDefinitions>
                         <Button Name= "btnqueryEx9" Content ="Excercise 9 Query" Height="25" Width="100
-                                " Click="BtnqueryEx9_Click"/>
-                    </Label>
+                                " Click="BtnqueryEx9_Click" Grid.ColumnSpan="2" Margin="68,8"/>
+                        <DataGrid Name="dgCustomerEx9" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"/>
+                        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2">
+                            <TextBlock Text="Ex9" Foreground="Red" Width="14" FontSize="9px" />
+                        </StackPanel>
+                    </Grid>
                 </TabItem>
 
 
-                
+
             </TabControl>
 
         </Grid>
