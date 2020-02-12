@@ -17,12 +17,15 @@ namespace Ex6
 
         public string City { get; set; }
 
-        static void Customers(string newname, string newcity)
+        public Customers(string newname, string newcity)
         {
+
+            Name = newname;
+            City = newcity;
             
 
         }
-            {
+            
 
     }
 }

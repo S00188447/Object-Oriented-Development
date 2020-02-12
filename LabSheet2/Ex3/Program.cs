@@ -55,7 +55,6 @@ namespace Ex3
 
                 //Console.WriteLine(item);
             }
-
             Console.ReadLine();
         }
     }
@@ -71,23 +70,4 @@ namespace Ex3
             return string.Format("{0,-30}{1:F0} MB\t{2}", Name, Length / 1000, CreationTime);
         }
     }
-
-    //<tabcontrol tabstripplacement = "Top">
-
-    //    <Tabitem header = "Exercise 1">
-    //    <Grid>
-
-    //    <grid.rowdefintion>
-    //    rowdefinition.height = "10*"/>
-    //       rowdefinition.height = "30*"/>
-
-    //    </Grid>
-
-    //    button.content = "Query 1" name = "btnexercise1" click = "btn excerice _ click" (press tab to create method)
-    //    grid,row = "0" width = "75" height = "20"/>
-
-    //    datagrid grid.row ="!" x:Name= "asb" margine = "10"/>
-    //        </Grid>
-    //        </Tabitem>
-
 }

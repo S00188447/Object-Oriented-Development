@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex4", "Ex4\Ex4.csproj", "{8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex5", "Ex5\Ex5.csproj", "{0F589990-D2C8-4981-AF68-D4241C699EA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex6", "Ex6\Ex6.csproj", "{296F4F1A-81F1-407C-BBA6-CFBCF0A26DB9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex6 - Ex10", "Ex6\Ex6 - Ex10.csproj", "{296F4F1A-81F1-407C-BBA6-CFBCF0A26DB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -21,11 +21,6 @@ namespace Ex5
 
             var query4 = query3.OrderByDescending(n => n).Where(n => n < 8).Select(n => Doubleit(n));
 
-
-
-
-
-
             foreach (var item in query3)
             {
                 Console.WriteLine(item);
@@ -35,11 +30,8 @@ namespace Ex5
 
         private static int Doubleit(int value)
         {
-
             //Console.WriteLine("About to double the number" + value.ToString());
             return value * 2;
-        }
-
-       
+        }   
     }
 }

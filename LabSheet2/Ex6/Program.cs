@@ -8,76 +8,78 @@ namespace Ex6
 {
     class Program
     {
+
         static void Main(string[] args)
         {
 
+            //Please uncomment the excercise you want to test
+
             string[] names = { "Mary", "Joseph", "Michael", "Sarah", "Margaret", "John" };
 
-            //exercise 7, sort alphabeticallym john should be first 
+            //ex 6 - display names
+            var query = names.OrderBy(n => n);
 
-            var query1 = names.OrderByDescending(n => n).OrderBy(n => Alphabetize(n));
+            /////////////////////
 
-            //String.Concat(names.OrderBy(c => c))
+            ////ex 7 - display names alphabetically
+            //var query = from name in names
+            //                     orderby name
+            //                     select name;
 
-            //ex 7
-            var query = from name in names
-                        orderby name
-                        select name;
+            /////////////////////
 
-            //ex 8
+            //ex 8 - include only names with M
+            //var query = from name in names
+            //            where name.StartsWith("M")
+            //            orderby name
+            //            select name;
 
-            var query = from name in names
-                        where name.StartsWith("W")
-                        orderby name
-                        select name
+            /////////////////////
 
-                        //ex 9
+            //ex 9 - Create a LINQ query which extracts customer names where the City is Dublin
+            //List<Customers> customers = Getcustomers();
+            //var query = from cust in customers
+            //where cust.City == "Dublin"
+            //select cust.Name;
 
-            list<Customer> customers = GetCustomers();
-            var query = from cust in customers
-                        where cust.city == "Dublin"
-                        select cust.Name;
+            /////////////////////
 
-            //ex 10
-            List<Customer> customers = GetCustiners();
-            var query = from cust in customers
-                        where (cust.city = "Dublin" || cust.city == "Galway")
-                        orderby cust.name
-                        select cust.name'
+            ////ex 10 - include Dublin or Galway names and order by name
+            //List<Customers> customers = Getcustomers();
+            //var query = from cust in customers
+            //            where cust.City == "Dublin" || cust.City == "Galway"
+            //            select cust.Name;
 
 
-                var query = customers
-                .where(customers => c.city == "Dublin")
-                .select(customers => customers.Name);
 
-            foreach (var item in names)
+            //Will run everytime depending on what excecise that isn't commented out
+            foreach (var item in query)
             {
                 Console.WriteLine(item);
             }
             Console.ReadLine();
         }
 
-        public static string Alphabetize(string s)
+        private static List<Customers> Getcustomers()
         {
-            // 1.
-            // Convert to char array.
-            char[] a = s.ToCharArray();
+   
+            //Creating values for the list
+            Customers cust1 = new Customers("John", "Dublin");
+            Customers cust2 = new Customers("Mary", "Galway");
+            Customers cust3 = new Customers("Jason", "Cork");
+            Customers cust4 = new Customers("Michael", "Galway");
+            Customers cust5 = new Customers("Tomas", "Dublin");
 
-            // 2.
-            // Sort letters.
-            Array.Sort(a);
+            List<Customers> customers = new List<Customers>();
 
-            // 3.
-            // Return modified string.
-            return new string(a);
-        }
+            //add to list
+            customers.Add(cust1);
+            customers.Add(cust2);
+            customers.Add(cust3);
+            customers.Add(cust4);
+            customers.Add(cust5);
 
-        private static List<Customers>GetCostumers()
-        {
-
-            List<Customers> customers = new List<Customers>;
-
-
+            return customers;
         }
     }
 }
