@@ -11,7 +11,8 @@ namespace Ex1
         static void Main(string[] args)
         {
 
-
+            NumbersLambda();
+            NumbersQuery();
         }
 
         private static void NumbersLambda()
