@@ -5,19 +5,22 @@
     <Grid>
         <Grid>
             <TabControl>
+                
                 <TabItem RenderTransformOrigin="2.068,3.998">
-
                     <TabItem.Header>
                         <StackPanel Orientation="Horizontal">
-
                             <TextBlock Text="Ex1" Foreground="Blue" Width="14" FontSize="9px" />
                         </StackPanel>
                     </TabItem.Header>
+                    
                     <Label >
-
                         <Button Name= "btnqueryEx1" Content ="Excercise 1 Query" Height="25" Width="100
                                 " Click="BtnqueryEx1_Click"/>
+                        
                     </Label>
+
+     
+
 
                 </TabItem>
 
@@ -26,12 +29,10 @@
                 <TabItem>
                     <TabItem.Header>
                         <StackPanel Orientation="Horizontal">
-
                             <TextBlock Text="Ex2" Foreground="Red" Width="14" FontSize="9px" />
                         </StackPanel>
                     </TabItem.Header>
                     <Label >
-
                         <Button Name= "btnqueryEx2" Content ="Excercise 2 Query" Height="25" Width="100
                                 " Click="BtnqueryEx2_Click"/>
                     </Label>
@@ -39,11 +40,9 @@
 
 
 
-
                 <TabItem>
                     <TabItem.Header>
                         <StackPanel Orientation="Horizontal">
-
                             <TextBlock Text="Ex3" Foreground="Green" Width="14" FontSize="9px" />
                         </StackPanel>
                     </TabItem.Header>
@@ -51,14 +50,13 @@
                         <Button Name= "btnqueryEx3" Content ="Excercise 3 Query" Height="25" Width="100
                                 " Click="BtnqueryEx3_Click"/>
                     </Label>
-
                 </TabItem>
 
 
+                
                 <TabItem>
                     <TabItem.Header>
                         <StackPanel Orientation="Horizontal">
-
                             <TextBlock Text="Ex4" Foreground="YellowGreen" Width="14" FontSize="9px" />
                         </StackPanel>
                     </TabItem.Header>
@@ -66,7 +64,6 @@
                         <Button Name= "btnqueryEx4" Content ="Excercise 4 Query" Height="25" Width="100
                                 " Click="BtnqueryEx4_Click"/>
                     </Label>
-
                 </TabItem>
 
                 
@@ -74,7 +71,6 @@
                 <TabItem>
                     <TabItem.Header>
                         <StackPanel Orientation="Horizontal">
-
                             <TextBlock Text="Ex5" Foreground="Purple" Width="14" FontSize="9px" />
                         </StackPanel>
                     </TabItem.Header>
@@ -82,7 +78,6 @@
                         <Button Name= "btnqueryEx5" Content ="Excercise 5 Query" Height="25" Width="100
                                 " Click="BtnqueryEx5_Click"/>
                     </Label>
-
                 </TabItem>
 
 
@@ -90,7 +85,6 @@
                 <TabItem>
                     <TabItem.Header>
                         <StackPanel Orientation="Horizontal">
-
                             <TextBlock Text="Ex6" Foreground="DeepPink" Width="14" FontSize="9px" />
                         </StackPanel>
                     </TabItem.Header>
@@ -98,7 +92,6 @@
                         <Button Name= "btnqueryEx6" Content ="Excercise 6 Query" Height="25" Width="100
                                 " Click="BtnqueryEx6_Click"/>
                     </Label>
-
                 </TabItem>
 
 
@@ -106,7 +99,6 @@
                 <TabItem>
                     <TabItem.Header>
                         <StackPanel Orientation="Horizontal">
-
                             <TextBlock Text="Ex7" Foreground="MediumPurple" Width="14" FontSize="9px" />
                         </StackPanel>
                     </TabItem.Header>
@@ -114,7 +106,6 @@
                         <Button Name= "btnqueryEx7" Content ="Excercise 7 Query" Height="25" Width="100
                                 " Click="BtnqueryEx7_Click"/>
                     </Label>
-
                 </TabItem>
 
 
@@ -122,7 +113,6 @@
                 <TabItem>
                     <TabItem.Header>
                         <StackPanel Orientation="Horizontal">
-
                             <TextBlock Text="Ex8" Foreground="OrangeRed" Width="14" FontSize="9px" />
                         </StackPanel>
                     </TabItem.Header>
@@ -130,14 +120,12 @@
                         <Button Name= "btnqueryEx8" Content ="Excercise 8 Query" Height="25" Width="100
                                 " Click="BtnqueryEx8_Click"/>
                     </Label>
-                    
                 </TabItem>
 
 
                 <TabItem>
                     <TabItem.Header>
                         <StackPanel Orientation="Horizontal">
-
                             <TextBlock Text="Ex9" Foreground="blue" Width="14" FontSize="9px" />
                         </StackPanel>
                     </TabItem.Header>
@@ -145,15 +133,10 @@
                         <Button Name= "btnqueryEx9" Content ="Excercise 9 Query" Height="25" Width="100
                                 " Click="BtnqueryEx9_Click"/>
                     </Label>
-
                 </TabItem>
 
 
-
-
-
-
-
+                
             </TabControl>
 
         </Grid>
